@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0b0e13;
+  --color-bg-sidebar: #080a0e;
+  --color-bg-elevated: #11161d;
+  --color-bg-card: #161c24;
+  --color-bg-hover: #1b222c;
+  --color-line: #2a3340;
+  --color-line-subtle: #232b35;
+  --color-text: #e8eef5;
+  --color-muted: #8b97a8;
+  --color-faint: #6a7585;
+  --color-green: #3dd68c;
+  --color-green-dim: #3dd68c24;
+  --color-red: #ff6b6b;
+  --color-red-dim: #ff6b6b24;
+  --color-amber: #f5c14a;
+  --color-amber-dim: #f5c14a24;
+  --color-gold: #c9a44c;
+  --color-gold-fg: #1a1406;
+  --color-teal: #6ee0d0;
+  --color-teal-dim: #6ee0d01f;
+  --color-real: #9aa5ff;
+  --color-real-dim: #9aa5ff24;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter), "IBM Plex Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #c9a44c44;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+.num {
+  font-family: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
